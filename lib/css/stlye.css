@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Segoe UI', sans-serif;
+  font-family:'Segoe UI', 'Montserrat', sans-serif;
+  
 }
 
 :root{
@@ -10,7 +11,9 @@
   --secondary-color: #eaf9ff;
   --text-dark: #1e293b;
   --text-muted: #64748b;
-  --bg-color: #CDF5FD
+  --bg-color: #CDF5FD;
+  --text-color: #00A9FF;
+  --text-color1:#737373;
 }
 .header {
   position: fixed;
@@ -69,7 +72,81 @@ main{
 .hero-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 4rem 5%;
   align-items: center;
   background-color: var(--bg-color);
+}
+ hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+ } 
+.tagline {
+  font-weight: 700;
+  color: #0d99ff;
+  margin-bottom: 20px;
+}
+.main-text {
+  color: var(--text-color1);
+  margin-top: 30px;
+}
+.hero-text h1 {
+  font-size: clamp(40px, 6vw, 80px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+.cta-box {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  /* border: 2px solid var(--text-color);
+  width: fit-content;
+  background-color: var(--primary-color); */
+}
+.btn{
+  padding: 0.75rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn.primary {
+  width: 193px;
+  background-color: #0d99ff;
+  color: #fff;
+  border: none;
+}
+.btn.secondary {
+  width: 162px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: solid 2px var(--text-color);
+}
+
+/* STATUS BAR STYLING */
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 5%;
+  background-color: #f8fbff;
+  border-radius: 20px;
+  margin-top: 3rem;
+}
+
+.status-item {
+  text-align: center;
+  flex: 1;
+}
+
+.status-item h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0d99ff;
+  margin-bottom: 0.5rem;
+}
+
+.status-item p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
 }
