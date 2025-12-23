@@ -14,12 +14,14 @@
   --bg-color: #CDF5FD;
   --text-color: #00A9FF;
   --text-color1:#737373;
-}
+  }
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
+  background-color: #fff;;
 }
 .navbar {
   display: flex;
@@ -108,6 +110,7 @@ main{
   padding: 0.75rem;
   font-size: 16px;
   font-weight: 600;
+  cursor: pointer;
 }
 .btn.primary {
   width: 193px;
@@ -148,5 +151,235 @@ main{
 .status-item p {
   font-size: 16px;
   font-weight: 500;
-  color: #555;
+  
 }
+
+
+/* FRAME 5 */
+.frame-5 {
+  width: 1050px;
+  height: 802px;
+  margin-left: 195px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Top vertical layout (hug 134px) */
+.frame-5-header {
+  max-width: 600px;
+  margin-top: 100px;
+}
+
+.frame-5-header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.frame-5-header h6 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  width: 117px;
+  height: 24px;
+  color: var(--primary-color)
+}
+.frame-5-header p{
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: var(--text-color1);
+}
+
+/* Horizontal layout (fixed 1045px, hug 268px) */
+.frame-5-content {
+  width: 1045px;
+  display: flex;
+  gap: 30px;
+}
+
+/* Individual cards (split into 3) */
+.service-card {
+  flex: 1;
+  padding: 32px 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  background-color: var(--bg-color);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Icon */
+.service-card i {
+  font-size: 32px;
+  color: #0d99ff;
+}
+
+/* Subheading */
+.service-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Subtext */
+.service-card p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+.icon-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;       /* makes it a circle */
+  background-color: var(--primary-color);/* red background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+/* Icon */
+.service-card i {
+  font-size: 32px;
+  color: red; /* changed from #0d99ff to red */
+}
+/* Divider line */
+.divider {
+  width: 40px;           /* short line */
+  height: 2px;           /* thickness */
+  background-color: #0d99ff; /* line color */
+  border: none;          /* remove default hr style */
+  margin: 8px 0;         /* spacing above and below */
+}
+
+
+
+/* MAIN CONTAINER */
+.doctors-container {
+  width: 1050px;
+  margin-left: 195px;
+  padding: 160px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* TOP VERTICAL LAYOUT */
+.doctors-header {
+  width: 1044px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.doctors-header h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0d99ff;
+  letter-spacing: 1px;
+}
+
+.doctors-header h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.doctors-header p {
+  max-width: 600px;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* HORIZONTAL LAYOUT */
+.doctors-cards {
+  width: 1045px;
+  display: flex;
+  gap: 30px;
+}
+
+/* CARD */
+.doctor-card {
+  width: 348px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* IMAGE */
+.doctor-card img {
+  width: 348px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* CARD CONTENT (VERTICAL LAYOUT) */
+.card-content {
+  padding: 25px 25px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* FRAME TEXT */
+.frame-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0d99ff;
+}
+
+/* TITLE */
+.card-content h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* DESCRIPTION */
+.card-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.learn-btn {
+  margin-top: 10px;
+  height: 44px;
+  width: fit-content;
+  padding: 0 28px;
+  border-radius: 37px;
+  background-color: transparent;
+  color: #0d99ff;
+  border: 2px solid #0d99ff;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* Top row inside card */
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Rating layout */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffb400; /* star & rating color */
+}
+
+.rating i {
+  font-size: 14px;
+}
+
+
+
