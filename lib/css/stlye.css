@@ -403,7 +403,6 @@ main{
   line-height: 20px;
   letter-spacing: 0.2px;
   text-align: center;
-  color: #252b42;
 }
 
 /* USER INFO */
@@ -433,3 +432,180 @@ main{
   color: #737373;
 }
 
+/* Footer section */
+/* FOOTER BACKGROUND */
+.footer-joinus {
+  width: 100%;
+  min-height: 346px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color);
+  align-items: center;
+}
+
+/* INNER CONTAINER */
+.joinus-container {
+  /* width: 1050px; */
+  padding: 160px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  /* margin-left: 195px; */
+}
+
+/* TEXT BLOCK (VERTICAL FLOW) */
+.joinus-text {
+  width: 692px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+/* H6 */
+.joinus-text h6 {
+  width: 82px;
+  height: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #0d99ff;
+  margin: 0;
+}
+
+/* H2 */
+.joinus-text h2 {
+  width: 700px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+/* PARAGRAPH */
+.joinus-text p {
+  width: 469px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+/* SUBSCRIBE ROW */
+.subscribe-row {
+  width: 688px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+}
+
+/* FORM */
+.subscribe-form {
+  width: 688px;
+  height: 58px;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* INPUT */
+.subscribe-input {
+  width: 571px;
+  height: 58px;
+  border: 1px solid #e6e6e6;
+  padding: 0 20px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* BUTTON */
+.subscribe-btn {
+  width: 117px;
+  height: 58px;
+  border: none;
+  background-color: #0d99ff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+/* Main Footer Section */
+/* FOOTER */
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  height: 272px;
+  margin: 0 auto;
+}
+
+/* INNER CONTAINER */
+.footer-container {
+  width: 1050px;
+  margin-left: 195px;
+  padding: 50px 0;
+}
+
+/* ROW */
+.footer-row {
+  width: 1041px;
+  display: flex;
+  gap: 30px;
+}
+
+/* STANDARD COLUMNS (col-md-2) */
+.footer-col {
+  width: 148px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CONTACT COLUMN (col-md-4) */
+.contact-col {
+  width: 280px;
+}
+
+/* HEADINGS */
+.footer-col h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* LIST */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col li {
+  font-size: 14px;
+  color: #737373;
+  cursor: pointer;
+}
+
+/* CONTACT ITEMS */
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #737373;
+}
+
+.contact-item img {
+  width: 22.81px;
+  height: 22.81px;
+  color: var(--primary-color);
+  font-weight: bolder;
+}
