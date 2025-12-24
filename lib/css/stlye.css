@@ -14,14 +14,12 @@
   --bg-color: #CDF5FD;
   --text-color: #00A9FF;
   --text-color1:#737373;
-  }
+}
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
-  background-color: #fff;;
 }
 .navbar {
   display: flex;
@@ -110,19 +108,21 @@ main{
   padding: 0.75rem;
   font-size: 16px;
   font-weight: 600;
-  cursor: pointer;
 }
 .btn.primary {
   width: 193px;
   background-color: #0d99ff;
   color: #fff;
   border: none;
+  border-radius: 5px;
 }
 .btn.secondary {
   width: 162px;
   background-color: var(--bg-color);
   color: var(--text-color);
   border: solid 2px var(--text-color);
+  border-radius: 5px;
+
 }
 
 /* STATUS BAR STYLING */
@@ -151,114 +151,190 @@ main{
 .status-item p {
   font-size: 16px;
   font-weight: 500;
-  
+  color: #555;
 }
-
-
-/* FRAME 5 */
-.frame-5 {
+/* Container */
+.container {
   width: 1050px;
-  height: 802px;
+  padding: 160px 0;
   margin-left: 195px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 80px;
 }
 
-/* Top vertical layout (hug 134px) */
-.frame-5-header {
-  max-width: 600px;
-  margin-top: 100px;
+/* Header Block */
+.header-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 134px;
 }
 
-.frame-5-header h2 {
+.practice-advice {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: var(--primary-color);
+}
+
+.main-title {
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 12px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
 }
 
-.frame-5-header h6 {
-  font-weight: 700;
+.intro-text {
+  width: 469px;
   font-size: 14px;
-  line-height: 24px;
-  width: 117px;
-  height: 24px;
-  color: var(--primary-color)
-}
-.frame-5-header p{
-  font-size: 8px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.2px;
   color: var(--text-color1);
 }
 
-/* Horizontal layout (fixed 1045px, hug 268px) */
-.frame-5-content {
-  width: 1045px;
+/* Cards Row */
+.cards-row {
   display: flex;
   gap: 30px;
 }
 
-/* Individual cards (split into 3) */
-.service-card {
-  flex: 1;
-  padding: 32px 24px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  background-color: var(--bg-color);
-
+/* Card */
+.card {
+  width: 348px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
-/* Icon */
-.service-card i {
-  font-size: 32px;
-  color: #0d99ff;
+.card-image {
+  width: 348px;
+  height: 300px;
+  background: #d9d9d9;
 }
 
-/* Subheading */
-.service-card h4 {
-  font-size: 20px;
+/* Card Content */
+.card-content {
+  padding: 25px 25px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Emergency + Rating */
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.emergency-link {
+  font-size: 14px;
   font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  color: #000;
+  color: var(--primary-color);
 }
 
-/* Subtext */
-.service-card p {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.5;
-}
-.icon-container {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;       /* makes it a circle */
-  background-color: var(--primary-color);/* red background */
+.rating {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 16px;
+  gap: 5px;
+  background: #26335d;
+  color: #fff;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 12px;
+  line-height: 16px;
 }
-/* Icon */
-.service-card i {
-  font-size: 32px;
-  color: red; /* changed from #0d99ff to red */
+
+/* Title */
+.card-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
 }
-/* Divider line */
-.divider {
-  width: 40px;           /* short line */
-  height: 2px;           /* thickness */
-  background-color: #0d99ff; /* line color */
-  border: none;          /* remove default hr style */
-  margin: 8px 0;         /* spacing above and below */
+
+/* Paragraph */
+.card-text {
+  width: 280px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: var(--text-color1);
+}
+
+/* Sales */
+.sales {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sales h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-color1);
+}
+
+/* Prices */
+.prices {
+  display: flex;
+  padding: 5px 3px;
+}
+
+.old-price {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-decoration: line-through;
+  color: var(--text-color1);
+  margin-right: 10px;
+}
+ .new-price {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: var(--primary-color);
+ }
+/* Button */
+.learn-more {
+  width: 144.44px;
+  height: 44px;
+  border-radius: 37px;
+  border: 1px solid #23a6f0;
+  background: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.learn-more h6 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--primary-color);
 }
 
 
 
+
+
+
+
+
+
+
+/*  */
 /* MAIN CONTAINER */
-.doctors-container {
+.testimonials-container {
   width: 1050px;
   margin-left: 195px;
   padding: 160px 0;
@@ -267,119 +343,269 @@ main{
   gap: 80px;
 }
 
-/* TOP VERTICAL LAYOUT */
-.doctors-header {
+/* HEADER */
+.testimonials-header {
   width: 1044px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.doctors-header h6 {
+.testimonials-header h6 {
   font-size: 14px;
   font-weight: 700;
   color: #0d99ff;
   letter-spacing: 1px;
 }
 
-.doctors-header h3 {
+.testimonials-header h3 {
   font-size: 40px;
   font-weight: 700;
 }
 
-.doctors-header p {
+.testimonials-header p {
   max-width: 600px;
   font-size: 16px;
   color: #666;
   line-height: 1.6;
 }
 
-/* HORIZONTAL LAYOUT */
-.doctors-cards {
+/* ROW LAYOUT */
+.testimonials-rows {
   width: 1045px;
   display: flex;
   gap: 30px;
 }
 
 /* CARD */
-.doctor-card {
-  width: 348px;
+.testimonial-card {
+  width: 298px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  gap: 15px;
+  background-color: #ffffff;
   border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  /* box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05); */
+  box-shadow: 8px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* IMAGE */
-.doctor-card img {
-  width: 348px;
-  height: 300px;
+/* STARS */
+.stars {
+  width: 130.07px;
+  height: 22.01px;
+}
+
+/* TEXT */
+.testimonial-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+/* USER INFO */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
-/* CARD CONTENT (VERTICAL LAYOUT) */
-.card-content {
-  padding: 25px 25px 35px;
+.user-info h5 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.user-info span {
+  font-size: 12px;
+  color: #737373;
+}
+
+/* Footer section */
+/* FOOTER BACKGROUND */
+.footer-joinus {
+  width: 100%;
+  min-height: 346px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color);
+  align-items: center;
+}
+
+/* INNER CONTAINER */
+.joinus-container {
+  /* width: 1050px; */
+  padding: 160px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  /* margin-left: 195px; */
+}
+
+/* TEXT BLOCK (VERTICAL FLOW) */
+.joinus-text {
+  width: 692px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+/* H6 */
+.joinus-text h6 {
+  width: 82px;
+  height: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #0d99ff;
+  margin: 0;
+}
+
+/* H2 */
+.joinus-text h2 {
+  width: 700px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+/* PARAGRAPH */
+.joinus-text p {
+  width: 469px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+/* SUBSCRIBE ROW */
+.subscribe-row {
+  width: 688px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+}
+
+/* FORM */
+.subscribe-form {
+  width: 688px;
+  height: 58px;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* INPUT */
+.subscribe-input {
+  width: 571px;
+  height: 58px;
+  border: 1px solid #e6e6e6;
+  padding: 0 20px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* BUTTON */
+.subscribe-btn {
+  width: 117px;
+  height: 58px;
+  border: none;
+  background-color: #0d99ff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+/* Main Footer Section */
+/* FOOTER */
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  height: 272px;
+  margin: 0 auto;
+}
+
+/* INNER CONTAINER */
+.footer-container {
+  width: 1050px;
+  margin-left: 195px;
+  padding: 50px 0;
+}
+
+/* ROW */
+.footer-row {
+  width: 1041px;
+  display: flex;
+  gap: 30px;
+}
+
+/* STANDARD COLUMNS (col-md-2) */
+.footer-col {
+  width: 148px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CONTACT COLUMN (col-md-4) */
+.contact-col {
+  width: 280px;
+}
+
+/* HEADINGS */
+.footer-col h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* LIST */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-/* FRAME TEXT */
-.frame-text {
+.footer-col li {
   font-size: 14px;
-  font-weight: 600;
-  color: #0d99ff;
-}
-
-/* TITLE */
-.card-content h5 {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-/* DESCRIPTION */
-.card-content p {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.6;
-}
-
-/* BUTTON */
-.learn-btn {
-  margin-top: 10px;
-  height: 44px;
-  width: fit-content;
-  padding: 0 28px;
-  border-radius: 37px;
-  background-color: transparent;
-  color: #0d99ff;
-  border: 2px solid #0d99ff;
-  font-weight: 600;
+  color: #737373;
   cursor: pointer;
 }
-/* Top row inside card */
-.card-top {
+
+/* CONTACT ITEMS */
+.contact-item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Rating layout */
-.rating {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  align-items: flex-start;
+  gap: 10px;
   font-size: 14px;
-  font-weight: 600;
-  color: #ffb400; /* star & rating color */
+  color: #737373;
 }
 
-.rating i {
-  font-size: 14px;
+.contact-item img {
+  width: 22.81px;
+  height: 22.81px;
+  color: var(--primary-color);
+  font-weight: bolder;
 }
-
-
-
