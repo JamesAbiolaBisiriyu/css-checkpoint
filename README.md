@@ -43,8 +43,12 @@ The design is inspired by a medical/healthcare landing page and was created to i
 │ └── (project images)`
 
 ## HOW TO RUN THE PROJECT
+<<<<<<< HEAD
 	--- git clone https://github.com/JamesAbiolaBisiriyu/css-checkpoint
  
  
+=======
+	![alt text](./lib/images/screenShot.png)
+>>>>>>> 24b9408446e7d795c60595ff7d13cd468b752913
 
 
