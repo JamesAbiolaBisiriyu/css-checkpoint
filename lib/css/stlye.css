@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family:'Segoe UI', 'Montserrat', sans-serif;
+  section {
+  padding: 80px 0;
+}
+
   
 }
 
@@ -127,6 +131,105 @@ main{
 
 }
 
+/* Frame 5 Styling */
+
+/* FRAME 5 */
+.frame-5 {
+  width: 1050px;
+  height: 802px;
+  margin-left: 195px;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+
+}
+
+/* Top vertical layout (hug 134px) */
+.frame-5-header {
+  /* max-width: 600px; */
+  width: 100%;
+
+  
+}
+
+.frame-5-header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.frame-5-header p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Horizontal layout (fixed 1045px, hug 268px) */
+.frame-5-content {
+  width: 100%;
+  width: 1045px;
+  display: flex;
+  gap: 30px;
+}
+.service-card hr {
+  width: 50px;          /* makes it short */
+  height: 3px;          /* thickness */
+  background-color: #89CFF3; /* or any color you want */
+  border: none;         /* remove default border */
+  margin: 12px 0;       /* spacing above & below */
+}
+
+
+/* Individual cards (split into 3) */
+.service-card {
+  flex: 1;
+  padding: 32px 24px;
+  border-radius: 16px;
+  background: #CDF5FD;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Icon */
+.service-card i {
+  font-size: 32px;
+  color: #0d99ff;
+}
+.circle-sec {
+  width: 72px;
+  height: 72px;
+  border-radius: 200px; /* makes it perfectly round */
+  background-color: #89CFF3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+ .circle-sec i {
+  font-size: 28px;
+  color: red; 
+} 
+
+
+/* Subheading */
+.service-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Subtext */
+.service-card p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+
 /* STATUS BAR STYLING */
 .status-bar {
   display: flex;
@@ -135,7 +238,7 @@ main{
   padding: 3rem 5%;
   background-color: #f8fbff;
   border-radius: 20px;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .status-item {
@@ -158,11 +261,15 @@ main{
 /* Container */
 .container {
   width: 1050px;
-  padding: 160px 0;
+  /* padding: 160px 0; */
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
   margin-left: 195px;
   display: flex;
   flex-direction: column;
   gap: 80px;
+   background-color: white;
 }
 
 /* Header Block */
@@ -327,6 +434,7 @@ main{
 
 
 
+/* Frame 5  */
 
 
 
@@ -339,7 +447,7 @@ main{
 .testimonials-container {
   width: 1050px;
   margin-left: 195px;
-  padding: 160px 0;
+  /* padding: 160px 0; */
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -448,7 +556,7 @@ main{
 /* INNER CONTAINER */
 .joinus-container {
   /* width: 1050px; */
-  padding: 160px 0;
+  /* padding: 160px 0; */
   display: flex;
   flex-direction: column;
   gap: 80px;
